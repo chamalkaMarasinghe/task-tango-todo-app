@@ -3,8 +3,28 @@
     "name": "nativeProject",
     "slug": "nativeProject",
     "version": "1.0.0",
+    
+    "permissions": {
+      "camera": {
+        "allowsCapture": true,
+        "allowsRecording": false,
+        "allowsExternalAppRecording": false,
+        "allowsExternalAppCapturing": false,
+        "ios": "Camera permissions are required to access the camera.",
+        "android": {
+          "title": "Camera Permission",
+          "message": "YourApp needs access to your camera to take photos and videos."
+        }
+      }
+    },
+
     "assetBundlePatterns": [
       "**/*"
+    ],
+    "plugins": [
+      [
+        "react-native-vision-camera"
+      ]
     ]
   }
 }
